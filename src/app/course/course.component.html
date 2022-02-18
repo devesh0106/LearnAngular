@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h2>{{ title }}</h2>
+        <ul>
+            <li *ngFor="let course of courses">
+                {{ course }}
+            </li>
+        </ul>
+        <button (click)="onSave()" class="btn btn-primary">Save</button><br/>
+        <input [value]="name" (keyup)="onKeyUp($event)"/> <!-- one way data binding-->
+        <input [(ngModel)]="name" (keyup)="onKeyUp($event)"/> <!-- 2 way data binding, uses Banana in the Box--> <br/>
+        {{name}}<br/>
+        {{course.title | uppercase}}<br/> <!--using upperase built-in pipes-->
+        {{course.rating |number:'1.2-2'}} <br/> <!-- decimal format is 'number of digits.min-max number of decimals'-->
+        {{course.students |number}}<br/>
+        {{course.price | currency:'INR':true}}<br/>
+        {{course.marks }}<br/>
+        {{text|summary}} <!--Custom pipe created in file summary.pipe.ts-->
+    </body>
+</html>

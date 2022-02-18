@@ -1,0 +1,5 @@
+1. In property Binding, Direction of binding is from Component to View. And this is called one way Data Binding. 
+Components can be anything in the container or webpage. 
+Module is the container and groups of components.
+Pipes are one of the Building blocks of angular and it is used to format data. Some Buit-in pipes are as below,
+1. Uppercase 2. Lowercase 3. Decimal 4.Currency 5. Percent 6.date
