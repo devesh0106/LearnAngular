@@ -5,11 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class CourseService {
 getCourse(){
-  return ["course 1","course 2","course 3"];
-}
-onKeyUp($event:any){
-  if($event.keyCode===13)
-  console.log($event.target.value); //value is printed in console
+  return [
+    {id: 1 , name: "course 1"},
+    {id: 2 , name: "course 2"},
+    {id: 3 , name: "course 3"}];
 }
   constructor() { }
 }
